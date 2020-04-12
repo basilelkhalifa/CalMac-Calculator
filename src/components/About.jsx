@@ -3,8 +3,8 @@ import { Container, Button, Row, Col } from "react-bootstrap";
 
 export default function About() {
   return (
-    <Container className="about">
-      <Row className="my-5">
+    <Container className="about font-weight-light">
+      <Row className="my-5 center-text">
         <Col sm={12} lg={6}>
           <Container fluid>
             <h1 className="font-weight-light pb-3">About CalMac</h1>
@@ -39,7 +39,7 @@ export default function About() {
           />
         </Col>
         <Col sm={12} lg={6} className="order-1 order-lg-2">
-          <Container fluid className="text-right">
+          <Container fluid className=" center-text text-right">
             <h1 className="font-weight-light pb-3">What next?</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
@@ -57,7 +57,7 @@ export default function About() {
 
       <Row>
         <Container className="text-center my-3">
-          <h3 className="font-weight-light">
+          <h3 className="font-weight-light learn-more">
             Learn more about calories and macronutrients!
           </h3>
 
