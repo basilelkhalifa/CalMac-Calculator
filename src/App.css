@@ -37,6 +37,7 @@ a:hover {
 /* Navbar color */
 .navbar {
   background-color: black;
+  transition: 150ms ease-in-out;
 }
 
 h4 {
@@ -126,14 +127,27 @@ select option {
   padding: 0.3rem 1rem;
 }
 
+.show-button {
+  opacity: 1;
+  pointer-events: all;
+  transition: 150ms ease-in-out;
+}
+
+.hide-button {
+  opacity: 0;
+  pointer-events: none;
+  transition: 150ms ease-in-out;
+}
+
 /* Contact and Footer Styles */
 footer {
   background-color: black;
   color: white;
 }
 
-/* Change background for phones and tablets */
+/* Phone and Tablet changes */
 @media only screen and (max-width: 992px) {
+  /* Change background for phones and tablets */
   .home-background {
     background-image: url("https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   }
@@ -142,5 +156,21 @@ footer {
   }
   .results-background {
     background-image: url("https://images.pexels.com/photos/2827400/pexels-photo-2827400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+
+  /* Changes sizes of texts */
+  .learn-more {
+    font-size: 1.2rem;
+    font-weight: 350 !important;
+  }
+
+  /* Center text */
+  .center-text {
+    text-align: center !important;
+  }
+
+  .remove-navbar {
+    opacity: 0;
+    pointer-events: none;
   }
 }
