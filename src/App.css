@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+/* Root Styles */
+#root {
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Background Images for different components */
+.home-background {
+  background-image: url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+}
+
+.calculator-background {
+  background-image: url("https://images.pexels.com/photos/3112004/pexels-photo-3112004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+}
+
+.results-background {
+  background-image: url("https://images.pexels.com/photos/371049/pexels-photo-371049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+}
+/* Navbar color */
+.navbar {
+  background-color: black;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+/* Home Page Styles */
+.jumbotronContainer {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron {
+  background-color: transparent;
+  width: 75%;
+}
+
+.btn-outline-secondary {
+  border: 1px white solid;
+  border-radius: 360px;
+  color: white;
+  width: 12rem;
+  transition: 300ms;
+}
+
+.btn-outline-secondary:hover {
+  color: black;
+  background-color: white;
+}
+
+/* About Page Styles */
+
+.btn-outline-dark {
+  border-radius: 360px;
+  width: 9.5rem;
+  transition: 300ms;
+}
+
+.btn-outline-dark:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Calculator Form */
+form {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 1px white solid;
+}
+
+.form-control {
+  background: transparent;
+  border: 0;
+  color: white;
+  border-radius: 0;
+  border-bottom: 1px white solid;
+  width: 350px;
+  padding: 0;
+  margin: 0;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+select option {
+  color: black;
+}
+
+.form-control:focus {
+  background: transparent;
+  border: 0;
+  color: white;
+  box-shadow: none;
+  border-bottom: 1px white solid;
+}
+
+.row {
+  margin-left: 0;
+}
+
+.d-flex .container {
+  padding: 0.3rem 1rem;
+}
+
+/* Contact and Footer Styles */
+footer {
+  background-color: black;
+  color: white;
+}
+
+/* Change background for phones and tablets */
+@media only screen and (max-width: 992px) {
+  .home-background {
+    background-image: url("https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   }
-  to {
-    transform: rotate(360deg);
+  .calculator-background {
+    background-image: url("https://images.pexels.com/photos/416809/pexels-photo-416809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .results-background {
+    background-image: url("https://images.pexels.com/photos/2827400/pexels-photo-2827400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   }
 }
