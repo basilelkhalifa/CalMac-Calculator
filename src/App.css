@@ -2,6 +2,7 @@
 #root {
   height: 100%;
   width: 100%;
+  background-color: black;
 }
 
 h1 {
@@ -149,13 +150,20 @@ footer {
 @media only screen and (max-width: 992px) {
   /* Change background for phones and tablets */
   .home-background {
-    background-image: url("https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/2827400/pexels-photo-2827400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position-y: 2rem;
   }
   .calculator-background {
     background-image: url("https://images.pexels.com/photos/416809/pexels-photo-416809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position-y: -2rem;
   }
   .results-background {
-    background-image: url("https://images.pexels.com/photos/2827400/pexels-photo-2827400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/1552102/pexels-photo-1552102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+
+  .x-small-font-size {
+    font-size: 0.9rem;
+    width: 75% !important;
   }
 
   /* Changes sizes of texts */
