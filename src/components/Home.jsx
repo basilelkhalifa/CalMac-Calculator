@@ -2,7 +2,7 @@ import React from "react";
 import { Jumbotron, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <Container
       fluid
@@ -15,7 +15,11 @@ export default function Home() {
           macronutrient intake!
         </p>
         <Link to="/calories">
-          <Button variant="outline-secondary" className="mx-2">
+          <Button
+            variant="outline-secondary"
+            className="mx-2"
+            onClick={props.onClick}
+          >
             Calculate Now
           </Button>
         </Link>
