@@ -43,20 +43,20 @@ export default function Calories(props) {
             </Col>
           </Row>
 
-          <Row className="w-50 mx-auto">
-            <Col sm={4}>
+          <Row className="w-50 mx-auto x-small-font-size">
+            <Col xs={4}>
               <Container fluid className="text-center">
                 <i className="fas fa-drumstick-bite"></i>
                 <p>Protein: {props.calculations.protein}g</p>
               </Container>
             </Col>
-            <Col sm={4}>
+            <Col xs={4}>
               <Container fluid className="text-center">
                 <i className="fas fa-bread-slice"></i>
                 <p>Carbs: {props.calculations.carbs}g</p>
               </Container>
             </Col>
-            <Col sm={4}>
+            <Col xs={4}>
               <Container fluid className="text-center">
                 <i className="fas fa-cheese"></i>
                 <p>Fats: {props.calculations.fats}g</p>
