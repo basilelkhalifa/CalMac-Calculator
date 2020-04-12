@@ -26,6 +26,7 @@ export default function Calories(props) {
                   Age:
                 </Form.Label>
                 <Form.Control
+                  className="w-100"
                   placeholder="Years"
                   size="sm"
                   type="numbers"
@@ -95,6 +96,7 @@ export default function Calories(props) {
                 </Form.Label>
                 <Form.Control
                   placeholder={props.weightPlaceholder}
+                  className="w-100"
                   size="sm"
                   type="numbers"
                   name="weight"
@@ -111,6 +113,7 @@ export default function Calories(props) {
                 </Form.Label>
                 <Form.Control
                   placeholder={props.heightPlaceholder}
+                  className="w-100"
                   size="sm"
                   type="numbers"
                   name="height"
@@ -157,13 +160,14 @@ export default function Calories(props) {
 
           <Row>
             <Col className="mx-auto my-4">
-              {props.isValid && (
-                <Link to="/results">
-                  <Button onClick={props.onClick} variant="outline-secondary">
-                    Submit
-                  </Button>
-                </Link>
-              )}
+              <Link
+                to="/results"
+                className={props.isValid ? "show-button" : "hide-button"}
+              >
+                <Button onClick={props.onClick} variant="outline-secondary">
+                  Submit
+                </Button>
+              </Link>
             </Col>
           </Row>
         </Form>
