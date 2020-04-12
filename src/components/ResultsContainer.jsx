@@ -1,5 +1,6 @@
 import React, { useState, useReducer, useEffect } from "react";
 import Results from "./Results";
+import { motion } from "framer-motion";
 
 export default function ResultsContainer(props) {
   const [select, setSelect] = useState("maintain");
@@ -88,10 +89,17 @@ export default function ResultsContainer(props) {
   };
 
   return (
-    <Results
-      onChange={handleChange}
-      selected={select}
-      calculations={calculations}
-    />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="h-100 w-100"
+    >
+      <Results
+        onChange={handleChange}
+        selected={select}
+        calculations={calculations}
+      />
+    </motion.div>
   );
 }

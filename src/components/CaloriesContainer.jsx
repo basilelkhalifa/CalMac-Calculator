@@ -1,5 +1,6 @@
 import React, { useState, useReducer, useEffect } from "react";
 import Calories from "./Calories";
+import { motion } from "framer-motion";
 
 export default function CaloriesContainer(props) {
   const [weightPlaceholder, setWeightPlaceHolder] = useState("Pounds");
@@ -69,13 +70,20 @@ export default function CaloriesContainer(props) {
   };
 
   return (
-    <Calories
-      onChange={handleChange}
-      onClick={handleClick}
-      isValid={isValid}
-      select={selectValue}
-      weightPlaceholder={weightPlaceholder}
-      heightPlaceholder={heightPlaceholder}
-    />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="h-100 w-100"
+    >
+      <Calories
+        onChange={handleChange}
+        onClick={handleClick}
+        isValid={isValid}
+        select={selectValue}
+        weightPlaceholder={weightPlaceholder}
+        heightPlaceholder={heightPlaceholder}
+      />
+    </motion.div>
   );
 }
