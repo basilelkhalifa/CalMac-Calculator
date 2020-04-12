@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Jumbotron,
-  Button,
-  Container,
-  Form,
-  Row,
-  Col,
-  Alert,
-} from "react-bootstrap";
+import { Jumbotron, Button, Container, Form, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function Calories(props) {
