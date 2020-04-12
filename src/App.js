@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
@@ -11,9 +11,26 @@ import ResultsContainer from "./components/ResultsContainer";
 function App() {
   const [userData, setUserData] = useState();
   const [redirectValue, setValue] = useState("/");
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+
+  const handleScroll = () => {
+    const isTop = window.scrollY < 1;
+    isTop ? setScrolled(false) : setScrolled(true);
+    console.log(scrolled);
+  };
+
+  const handleClickHome = () => {
+    setValue("/calories");
+  };
 
   const handleClick = (userInput) => {
-    setValue("/calories");
     setUserData(userInput);
   };
 
@@ -24,8 +41,16 @@ function App() {
 
   return (
     <Router>
-      <NavBar onClick={handleRedirect} redirectPath={redirectValue} />
-      <Route exact path="/" component={Home} />
+      <NavBar
+        onClick={handleRedirect}
+        redirectPath={redirectValue}
+        scrolled={scrolled}
+      />
+      <Route
+        exact
+        path="/"
+        render={(props) => <Home {...props} onClick={handleClickHome} />}
+      />
       <Route
         path="/calories"
         render={(props) => (
