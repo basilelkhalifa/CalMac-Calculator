@@ -5,7 +5,12 @@ import { Link as LinkScroll } from "react-scroll";
 
 export default function NavBar(props) {
   return (
-    <Navbar fixed="top" variant="dark" expand="md" className="pb-3">
+    <Navbar
+      fixed="top"
+      variant="dark"
+      expand="md"
+      className={props.scrolled ? "pb-3" : "pb-3  remove-navbar"}
+    >
       <Redirect push to={props.redirectPath} />
 
       <Container>
