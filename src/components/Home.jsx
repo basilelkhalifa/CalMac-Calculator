@@ -18,8 +18,7 @@ export default function Home(props) {
         <Jumbotron fluid className="text-white text-center">
           <h1>CalMac Calculator</h1>
           <p>
-            A simple calculator that calculates your daily calorie and/or
-            macronutrient intake!
+            A simple and straightforward Calories/Macronutrients Calculator!
           </p>
           <Link to="/calories">
             <Button
