@@ -48,7 +48,7 @@ export default function About() {
             className="img-thumbnail img-fluid "
           />
         </Col>
-        <Col sm={12} lg={6} className="order-1 order-lg-2 my-auto">
+        <Col sm={12} lg={6} className="order-1 order-lg-2">
           <Container fluid className=" center-text text-right">
             <h1 className="font-weight-light pb-3">What's next?</h1>
             <p>
@@ -74,8 +74,8 @@ export default function About() {
       </Row>
 
       <Row className="my-5 center-text mx-auto pb-3">
-        <Col sm={12} lg={6} className="my-auto">
-          <Container fluid>
+        <Col sm={12} lg={6}>
+          <Container fluid className="my-auto">
             <h1 className="font-weight-light pb-3">Tracking your calories</h1>
             <p>
               Keeping track of your calories can also be helpful in reaching
@@ -98,9 +98,9 @@ export default function About() {
 
         <Col sm={12} lg={6} className="my-auto">
           <img
-            src="https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            src="https://images.unsplash.com/photo-1513949145697-7a3b42cb9f21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
             alt="paper"
-            className="img-thumbnail img-fluid "
+            className="img-thumbnail img-fluid"
           />
         </Col>
       </Row>
