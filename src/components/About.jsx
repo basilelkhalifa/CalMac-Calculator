@@ -74,8 +74,8 @@ export default function About() {
       </Row>
 
       <Row className="my-5 center-text mx-auto pb-3">
-        <Col sm={12} lg={6}>
-          <Container fluid className="my-auto">
+        <Col sm={12} lg={6} className="my-auto">
+          <Container fluid>
             <h1 className="font-weight-light pb-3">Tracking your calories</h1>
             <p>
               Keeping track of your calories can also be helpful in reaching
