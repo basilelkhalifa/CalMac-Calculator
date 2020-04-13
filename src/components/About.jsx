@@ -99,7 +99,7 @@ export default function About() {
         <Col sm={12} lg={6} className="my-auto">
           <img
             src="https://images.unsplash.com/photo-1513949145697-7a3b42cb9f21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-            alt="paper"
+            alt="notebook"
             className="img-thumbnail img-fluid"
           />
         </Col>
