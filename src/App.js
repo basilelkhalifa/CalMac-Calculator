@@ -15,17 +15,16 @@ function App() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      const isTop = window.scrollY < 1;
+      isTop ? setScrolled(false) : setScrolled(true);
+      console.log(scrolled);
+    };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
-
-  const handleScroll = () => {
-    const isTop = window.scrollY < 1;
-    isTop ? setScrolled(false) : setScrolled(true);
-    console.log(scrolled);
-  };
 
   const handleClickHome = () => {
     setValue("/calories");

@@ -22,24 +22,23 @@ export default function CaloriesContainer(props) {
   );
 
   useEffect(() => {
+    const validate = () => {
+      if (
+        !userInput.age ||
+        !userInput.weight ||
+        !userInput.height ||
+        userInput.activity === "select" ||
+        isNaN(userInput.age) ||
+        isNaN(userInput.weight) ||
+        isNaN(userInput.height)
+      ) {
+        setIsValid(false);
+      } else {
+        setIsValid(true);
+      }
+    };
     validate();
   }, [userInput]);
-
-  const validate = () => {
-    if (
-      !userInput.age ||
-      !userInput.weight ||
-      !userInput.height ||
-      userInput.activity === "select" ||
-      isNaN(userInput.age) ||
-      isNaN(userInput.weight) ||
-      isNaN(userInput.height)
-    ) {
-      setIsValid(false);
-    } else {
-      setIsValid(true);
-    }
-  };
 
   // Changes Height and Weight inputs' placeholders
   const changePlaceHolders = (e) => {
