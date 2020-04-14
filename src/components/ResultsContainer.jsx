@@ -31,13 +31,16 @@ export default function ResultsContainer(props) {
       };
 
       // Convert given weight to KG and given height to cm
+      const percisionNumber = Number(userInput.height)
+        .toPrecision(2)
+        .toString();
       userInput.unit === "metric"
         ? (kg = Number(userInput.weight))
         : (kg = Number(userInput.weight) / 2.2);
       userInput.unit === "metric"
         ? (cm = Number(userInput.height))
         : (cm =
-            Number(userInput.height[0]) * 30 + Number(userInput.height[2]) * 2);
+            Number(percisionNumber[0]) * 30 + Number(percisionNumber[2]) * 2);
 
       // Calculate Calories and Macros
       let calories;
