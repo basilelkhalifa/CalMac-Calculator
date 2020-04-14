@@ -12,19 +12,19 @@ export default function About() {
               The CalMac calculator can be used to calculate the approximate
               number of calories and macronutrients a person needs to consume
               daily to maintain, gain, or lose weight. To understand how the
-              calculator works, we must first explain what calories and
+              calculator works, we must first understand what calories and
               macronutrients are. A calorie is a unit of energy used to estimate
-              how much energy is in food. On the other hand, macronutrients, or
-              macros for short, are nutrients that are needed by the human body
-              to function. In fitness, the most focused on macros are proteins,
-              carbohydrates (carbs), and fats. Moreover, macros are sources of
-              energy that can be measured using calories. In each gram of
-              protein and carbs there are approximately 4 calories. Similarly,
-              in each gram of fats there are approximately 9 grams of fats.
-              Using this information, one can obtain the number of calories
-              needed to maintain, lose or gain weight. Conversely, one can
-              obtain the number of needed macros using his/her calculated number
-              of calories. CalMac uses a formula and average numbers to
+              how much energy is in food and macronutrients, or macros for
+              short, are nutrients that are needed by the human body to
+              function. Macros can be broken down into three major groups:
+              proteins, carbohydrates (carbs), and fats. Moreover, macros are
+              sources of energy that can be measured using calories. In each
+              gram of protein and carbs there are approximately 4 calories.
+              Similarly, in each gram of fats there are approximately 9 grams of
+              fats. Using this information, one can obtain the number of
+              calories needed to maintain, lose or gain weight. Conversely, one
+              can obtain the number of needed macros using his/her calculated
+              number of calories. CalMac uses a formula and average numbers to
               calculate one's caloric intake; it then uses the calculated number
               of calories to calculate the number of macros.
             </p>
