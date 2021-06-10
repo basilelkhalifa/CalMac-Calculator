@@ -33,7 +33,7 @@ export default function About() {
 
         <Col sm={12} lg={6} className="my-auto">
           <img
-            src="https://ibb.co/NWqgt45"
+            src="https://i.ibb.co/TPGDYC6/Annotation-2021-06-10-233945.jpg"
             alt="Calmac calculator"
             className="img-thumbnail img-fluid"
           />
